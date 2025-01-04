@@ -1,0 +1,19 @@
+@import './variables';
+.dashboard {
+    padding: 2rem;
+  
+    .card {
+      margin-bottom: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: $card-shadow;
+      padding: 1rem;
+    }
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $text-color;
+  }
+  

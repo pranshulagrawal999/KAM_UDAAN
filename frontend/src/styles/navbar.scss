@@ -1,0 +1,16 @@
+@import './variables';
+.navbar {
+    background-color: $primary-color;
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .nav-link {
+      color: white;
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+  }
+  
