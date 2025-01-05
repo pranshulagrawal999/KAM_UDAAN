@@ -1,0 +1,132 @@
+/* src/styles.css */
+
+/* Reset and Basic Styles */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a, footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+header nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.auth-container, .restaurant-form, .contact-form, .interaction-form, .dashboard, .restaurants, .contact-detail, .interaction-detail {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.auth-container form, .restaurant-form form, .contact-form form, .interaction-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container form div, .restaurant-form form div, .contact-form form div, .interaction-form form div {
+    margin-bottom: 15px;
+}
+
+.auth-container form label, .restaurant-form form label, .contact-form form label, .interaction-form form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-container form input, .restaurant-form form input, .contact-form form input, .interaction-form form input,
+.auth-container form select, .restaurant-form form select, .interaction-form form select,
+.auth-container form textarea, .contact-form form textarea {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button, .btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px); /* Adjust based on header and footer height */
+}
+
+.dashboard ul, .restaurants ul, .contacts ul, .interactions ul {
+    padding: 0;
+}
+
+.dashboard li, .restaurants li, .contacts li, .interactions li {
+    margin-bottom: 10px;
+}
